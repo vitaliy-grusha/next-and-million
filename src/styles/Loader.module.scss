@@ -1,0 +1,33 @@
+.loading-container {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: fit-content;
+
+  .loading {
+    display: flex;
+    flex-wrap: wrap-reverse;
+
+    &.loader {
+      height: 80px;
+      margin-bottom: 24px;
+      .line {
+        width: 20px;
+      }
+    }
+
+    &_small {
+      height: 60px;
+      // gap: 9px;
+      margin-bottom: 16px;
+      &.loader {
+        height: 60px;
+        .line {
+          width: 15px;
+          margin: 0 4px 0 4px;
+        }
+      }
+    }
+  }
+}

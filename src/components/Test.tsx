@@ -11,11 +11,8 @@ export default function LoadingData({ small = false }: { small?: boolean }) {
     <>
       <div className={`${containerClass} ${cls['loading-container']}`}>
         <div className={`${cls['loading']} ${cls['loader']} ${sizeClass}`}>
-          <div className={`mx-0.5 bg-yellow ${cls['line']}`}></div>
-          <div className={`bg-light-blue ${cls['line']}`}></div>
-          <div className={`bg-primary ${cls['line']}`}></div>
         </div>
-        <h4 className={`${titleClass} font-semibold`}>loading</h4>
+        <h4 className={`${titleClass} font-semibold`}>{'loading'}</h4>
       </div>
     </>
   )
